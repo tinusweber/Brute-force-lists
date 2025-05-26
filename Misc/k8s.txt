@@ -7,11 +7,17 @@ apiserver.pem
 10-flannel.conf
 config.source
 audit.log
+data/configdb/mongod.conf
+/var/run/secrets/eks.amazonaws.com/serviceaccount/
+/host/var/log/aws-routed-eni/ipamd.log
+/var/run/secrets/eks.amazonaws.com/serviceaccount/token
+etc/grafana/grafana.ini
 config.hash
 apiserver-key.pem
 cni-conf.json
 kube-proxy.log
 apiserver-aggregator-ca.cert
+etc/grafana/provisioning/datasources/datasources.yaml
 apiserver-aggregator.cert
 server.cert
 ca.key
@@ -20,7 +26,6 @@ kube-scheduler.log
 node-role.kubernetes.io
 kube-apiserver.log
 basic_auth.csv
-basic_auth02.csv
 dns.alpha.kubernetes.io
 apiserver-aggregator.key
 etcd.log
